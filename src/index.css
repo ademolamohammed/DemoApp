@@ -81,7 +81,8 @@ body {
     width:40% !important;
     height:40% !important;
     margin: auto !important;
-    margin-top: -10rem !important;
+    margin-top: -3rem !important;
+    margin-bottom: 1rem !important;
   }
 
   .wrapper{
