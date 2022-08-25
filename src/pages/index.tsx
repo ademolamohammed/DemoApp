@@ -132,7 +132,7 @@ const Main: React.FC = () => {
       </div>
       <div style={{ backgroundColor: "#0A2640" }} className="p-0 mb-5">
         <div className="p-5">
-          <h4 className="w-50 text-white">
+          <h4 style={{width:'50'}} className="text-white">
             An enterprise template to ramp up your company website
           </h4>
           <div style={{cursor:'pointer'}}  className="d-flex justify-content-end">

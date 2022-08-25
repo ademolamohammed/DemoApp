@@ -183,6 +183,22 @@ body {
     width: 100% !important;
   }
 
+  .footer-right{
+    flex-direction: column !important;
+  }
+  .footer-right_tab{
+    text-align: center !important;
+    align-self: center !important;
+  }
+
+  .wrapper{
+    min-height: 60vh !important;
+  }
+
+  .img-change{
+    display:  none !important;
+  }
+
 }
 
 

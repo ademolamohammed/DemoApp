@@ -34,8 +34,8 @@ const HeaderTab = () => {
                     </button>
                 </div>
             </div>
-            <div style={{zIndex:99999}} className="col-lg-6 align-self-center d-flex secondHalf ">
-                <img src={hero} className="images ml-auto"   alt=" frame image"/>
+            <div style={{zIndex:99999}} className="col-lg-6 align-self-center d-flex secondHalf img-change">
+                <img src={hero}  className="images ml-auto img-change"   alt=" frame image"/>
             </div>
         </div>
         <div className="text-center">

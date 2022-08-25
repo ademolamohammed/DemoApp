@@ -21,8 +21,8 @@ const Footer = () => {
                 </p>
             </div>
 
-            <div className='col-md-12 col-lg-7 d-flex ml-3 justify-content-between mb-3'>
-                <div className='d-flex flex-column'>
+            <div className='col-md-12 col-lg-7 d-flex ml-3 justify-content-between mb-3 footer-right'>
+                <div className='d-flex flex-column  footer-right_tab mb-5'>
                     <h4 className='mb-3'>Landings</h4>
                     <div style={{cursor:'pointer'}}>
                         <p className='mb-3'>Home</p>
@@ -32,7 +32,7 @@ const Footer = () => {
                     
                 </div>
 
-                <div className='d-flex flex-column'>
+                <div className='d-flex flex-column footer-right_tab mb-5'>
                     <h4 className='mb-3'>Company</h4>
                     <p className='mb-3'> Home </p>
                     <p className='mb-3'> 
@@ -42,7 +42,7 @@ const Footer = () => {
                     <p>Services</p>
                 </div>
 
-                <div className='d-flex flex-column'>
+                <div className='d-flex flex-column footer-right_tab mb-5' >
                     <h4 className='mb-3'>Resources</h4>
                     <p className='mb-3'> Blog </p>
                     <p className='mb-3'> Products</p>

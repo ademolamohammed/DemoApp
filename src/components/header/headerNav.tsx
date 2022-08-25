@@ -13,8 +13,8 @@ const Header:React.FC = () => {
 
 return( 
    <div style={{minHeight:'72vh'}} className="wrapper">
-        <Navbar expand={'md'} className="header position-relative m-0 h-25 p-3">
-          <Container fluid className=''>
+        <Navbar expand={'md'} className="header position-relative m-0 p-3">
+          <Container fluid className='mb-5'>
             <Navbar.Brand href="#" style={{zIndex:999}}  >
                 <img src={Logo} alt="App logo" width="100"/>
             </Navbar.Brand>
