@@ -1,4 +1,5 @@
-import react from 'React';
+import React from 'react';
+
 import { Nav } from 'react-bootstrap';
 
 import logoBlack from '../../assets/images/logoBlack.png';
