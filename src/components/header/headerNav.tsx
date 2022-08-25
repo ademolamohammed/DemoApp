@@ -30,14 +30,15 @@ return(
                   Mobile view
                 </Offcanvas.Title>
               </Offcanvas.Header>
-              <Offcanvas.Body className='p-0 d-flex' style={{zIndex:9999}}>
+              {/* 9999 */}
+              <Offcanvas.Body className='p-0 d-flex ml-auto nav-canvas' style={{zIndex:9999}}>
                 <Nav style={{justifyContent:'end'}} className="flex-grow-1 pe-3 nav-text">
                   <Nav.Link href="#action1">Product</Nav.Link>
                   <Nav.Link href="#action2">Services</Nav.Link>
                   <Nav.Link>About</Nav.Link>
                 <Nav.Link >
                     <a className='px-4 py-1 bg-white text-primary rounded text-decoration-none'>
-                        Log In 
+                        Log In
                     </a>
                 </Nav.Link>
                 </Nav>

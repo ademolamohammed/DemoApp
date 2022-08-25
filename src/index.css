@@ -71,6 +71,7 @@ body {
 }
 
 @media (max-width: 991px) {
+
   .firstHalf{
     width: 100% !important;
     margin-bottom: 4rem;
@@ -80,10 +81,12 @@ body {
     width:40% !important;
     height:40% !important;
     margin: auto !important;
+    margin-top: -10rem !important;
   }
 
   .wrapper{
     min-height: 105vh !important;
+
   }
 
   .card-section{
@@ -128,9 +131,14 @@ body {
 }
 
 @media (max-width: 767px) {
+
+  .nav-canvas{
+    margin-left: 0 !important;
+  }
+  
   .nav-link {
     color: var(--color-login) !important;
-  }
+  } 
 
   .nav-text{
     align-items: center;
