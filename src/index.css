@@ -32,6 +32,10 @@ body {
   background-color: var(--color-template) !important;
 }
 
+.radius{
+  border-radius: 25px !important;
+}
+
 .nav-link a {
   color: var(--color-login) !important;
 }
@@ -111,6 +115,15 @@ body {
     flex-direction: column !important;
   }
 
+  .card-item{
+    text-align: center !important;
+    margin:auto !important;
+    width: 50% !important; 
+  }
+
+  .input-expand{
+    width: 50% !important;
+  }
   
 }
 
@@ -148,6 +161,23 @@ body {
     width: 100%;
   }
 
+}
+
+@media (max-width: 600px) {
+
+  .input-expand{
+    width: 100% !important;
+    margin-bottom: 2rem;
+  }
+
+
+  .adjustInput{
+    padding: 1 !important;
+  }
+
+  .form-Nav{
+    flex-direction: column;
+  }
 }
 
 

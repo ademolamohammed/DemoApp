@@ -11,6 +11,13 @@ import albus from "../assets/images/albus.svg";
 import potter from "../assets/images/potter.svg";
 import snap from "../assets/images/snap.svg";
 
+import monica from "../assets/images/monica.png";
+import green from "../assets/images/green.png";
+import bing from "../assets/images/bing.png";
+
+
+
+
 import cooperate from "../assets/images/cooperate.svg"
 
 
@@ -18,6 +25,7 @@ import cooperate from "../assets/images/cooperate.svg"
 
 import Card from "../components/elements/card";
 import { Accordion } from "react-bootstrap";
+import EmailTemplate from "../components/elements/emailTemplate";
 
 const Main: React.FC = () => {
   return (
@@ -127,9 +135,9 @@ const Main: React.FC = () => {
           <h4 className="w-50 text-white">
             An enterprise template to ramp up your company website
           </h4>
-          <div className="d-flex justify-content-end">
-            <i style={{cursor:'pointer'}} className="fa fa-arrow-left text-dark bg-white border rounded-circle p-3 mr-4"></i>
-            <i style={{cursor:'pointer'}}  className="fa fa-arrow-right text-dark bg-white border rounded-circle p-3"></i>
+          <div style={{cursor:'pointer'}}  className="d-flex justify-content-end">
+            <i className="fa fa-arrow-left text-dark bg-white border rounded-circle p-3 mr-4"></i>
+            <i className="fa fa-arrow-right text-dark bg-white border rounded-circle p-3"></i>
           </div>
         </div>
         {/* flex-column
@@ -213,6 +221,49 @@ const Main: React.FC = () => {
         <h4 className="m-auto w-50 main-text mb-5 text-center">
             Value proposition accelerator product management venture
         </h4>
+        <div className="row d-flex justify-content-around align-items-center">
+          <div className="d-flex card-section col-md-12 col-lg-3">
+            <Card
+              title="Category"
+              mutedTitle=" November 22, 2021"
+              content="Pitch termsheet backing validation focus release."
+              image={walk}
+              withImage
+              imageName="Chandler Bing"
+              image2={bing}
+            />
+          </div>
+
+          <div className="d-flex card-section  col-md-12 col-lg-3">
+            <Card
+              title="Category"
+              mutedTitle=" November 22, 2021"
+              content="Seed round direct mailing non-disclosure agreement graphical user interface rockstar.."
+              image={friendship}
+              withImage
+              imageName="Rachel Green"
+              image2={green}
+            />
+          </div>
+
+          <div className="d-flex card-section col-md-12 col-lg-3">
+            <Card
+              title="Category"
+              mutedTitle=" November 22, 2021"
+              content="Beta prototype sales iPad gen-z marketing network effects value proposition."
+              image={imagine}
+              withImage
+              imageName="Monica Geller"
+              image2={monica}
+            />
+          </div>
+        </div>
+        <div className="text-center mt-3">
+            <button type="button" className="px-4 btn border-dark btn-outline-secondary font-weight-bold bg-white text-dark mb-3 radius">Learn More</button>
+        </div>
+        <div style={{padding:'1rem'}} className="adjustInput">
+            <EmailTemplate />
+        </div>
     </div>
     </>
   );

@@ -19,10 +19,10 @@ const HeaderTab = () => {
                      non-disclosure.
                 </p>
                 <div className="mt-5">
-                    <button className="btn rounded text-dark mr-4 px-4 font-weight-bold template">
+                    <button className="btn radius text-dark mr-4 px-4 font-weight-bold template">
                         Buy template
                     </button>
-                    <button   className="btn border rounded text-white border-white px-5 font-weight-bold"> 
+                    <button   className="btn border radius text-white border-white px-5 font-weight-bold"> 
                         Explore
                     </button>
                 </div>
