@@ -131,6 +131,14 @@ body {
     min-height: 90vh !important;
   }
 
+  .inner-content_div{
+    width: 70% !important;
+  }
+
+  .accordion{
+    padding: 0 !important;
+  }
+
   .footer-first{
     text-align: center;
     order:1;

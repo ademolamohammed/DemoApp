@@ -11,10 +11,13 @@ import albus from "../assets/images/albus.svg";
 import potter from "../assets/images/potter.svg";
 import snap from "../assets/images/snap.svg";
 
+import cooperate from "../assets/images/cooperate.svg"
+
 
 
 
 import Card from "../components/elements/card";
+import { Accordion } from "react-bootstrap";
 
 const Main: React.FC = () => {
   return (
@@ -171,9 +174,46 @@ const Main: React.FC = () => {
         
         </div>
       </div>
-      <div>
-        
+      <div className="p-5 d-flex flex-column">
+        <div className="m-auto">
+            <img src={cooperate} width="100%"/>
+        </div>
+        <div style={{padding:'0 5rem'}} className="row d-flex justify-content-between m-auto mt-5 accordion">
+            <h4 className="col-md-12 col-lg-4">We connect our customers with the best, and help them keep up-and stay open.</h4>
+            <Accordion className="col-md-12 col-lg-5" defaultActiveKey="0" flush>
+                <Accordion.Item className="" eventKey="0">
+                    <Accordion.Header>We connect our customers with the best?</Accordion.Header>
+                    <Accordion.Body>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                    </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item className="" eventKey="1">
+                    <Accordion.Header>Android research & development rockstar? </Accordion.Header>
+                    <Accordion.Body>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                    </Accordion.Body>
+                </Accordion.Item>
+            </Accordion>
+        </div>
       </div>
+      <div className="mb-3 mt-4 p-4">
+        <p className="text-center mb-3">Our Blog</p>
+        <h4 className="m-auto w-50 main-text mb-5 text-center">
+            Value proposition accelerator product management venture
+        </h4>
+    </div>
     </>
   );
 };
