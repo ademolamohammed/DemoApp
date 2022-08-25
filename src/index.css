@@ -201,6 +201,11 @@ body {
 
 }
 
+@media (max-width: 342px) {
+  .card-container{
+    margin-left: -10px;
+  }
+}
 
 
 

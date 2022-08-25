@@ -1,22 +1,6 @@
 import React from "react";
 
-import walk from "../assets/images/walk.svg";
-import friendship from "../assets/images/friendship.svg";
-import imagine from "../assets/images/imagine.svg";
-
-import income from "../assets/images/income.svg";
-import agile from "../assets/images/agile.svg";
-
-import albus from "../assets/images/albus.svg";
-import potter from "../assets/images/potter.svg";
-import snap from "../assets/images/snap.svg";
-
-import monica from "../assets/images/monica.png";
-import green from "../assets/images/green.png";
-import bing from "../assets/images/bing.png";
-
-
-
+import images from '../assets/image'
 import cooperate from "../assets/images/cooperate.svg"
 
 
@@ -28,6 +12,8 @@ import EmailTemplate from "../components/elements/emailTemplate";
 import { toast } from "react-toastify";
 
 const Main: React.FC = () => {
+
+    console.log(images)
   return (
     <>
       <div className="mb-3 p-4">
@@ -40,7 +26,7 @@ const Main: React.FC = () => {
             <Card
               title="Cool feature title"
               content="Learning curve network effects return on investment."
-              image={walk}
+              image={images[0]} //walk
             />
           </div>
 
@@ -48,7 +34,7 @@ const Main: React.FC = () => {
             <Card
               title="Even cooler feature"
               content="Learning curve network effects return on investment."
-              image={friendship}
+              image={images[1]} //friendship
             />
           </div>
 
@@ -56,13 +42,13 @@ const Main: React.FC = () => {
             <Card
               title="Cool feature title"
               content="Learning curve network effects return on investment."
-              image={imagine}
+              image={images[2]} //imagine
             />
           </div>
         </div>
         <div className="row d-flex justify-content-between mt-5 p-5">
           <div className="col-md-12 col-lg-5 text-center">
-            <img src={income} width="50%" />
+            <img src={images[3]} width="50%" /> 
           </div>
           <div className="col-md-12 col-lg-5 d-flex flex-column align-self-center income-text">
             <h4 style={{ width: "75%" }} className="mb-4 income-text_header">
@@ -126,7 +112,7 @@ const Main: React.FC = () => {
             </div>
           </div>
           <div className="col-md-12 col-lg-5 text-center">
-            <img src={agile} width="50%" />
+            <img src={images[4]} width="50%" />
           </div>
         </div>
       </div>
@@ -147,7 +133,7 @@ const Main: React.FC = () => {
                 <div className="card-body">
                     <p className="card-text mb-3">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <div className="d-flex inner-content_div_text">
-                        <img src={albus} width="20%" className="align-self-center" /> 
+                        <img src={images[5]} width="20%" className="align-self-center" /> 
                         <div className="d-flex flex-column align-self-center ml-2">
                             <p className="p-0 m-0 font-weight-bold">Albus Dumbledore</p>
                             <small style={{fontSize:'10px'}}>Manager @ Howarts</small>
@@ -159,7 +145,7 @@ const Main: React.FC = () => {
                 <div className="card-body">
                     <p className="card-text mb-3 p-2">“Learning curve infrastructure value proposition advisor strategy user experience hypotheses investor. ”</p>
                     <div className="d-flex inner-content_div_text">
-                        <img src={snap} width="20%" className="align-self-center"  /> 
+                        <img src={images[6]} width="20%" className="align-self-center"  /> 
                         <div className="d-flex flex-column align-self-center ml-2">
                             <p className="p-0 m-0 font-weight-bold">Severus Snape</p>
                             <small style={{fontSize:'10px'}}>Manager @ system</small>
@@ -171,7 +157,7 @@ const Main: React.FC = () => {
                 <div className="card-body">
                         <p className="card-text mb-3">“Release facebook responsive web design business model canvas seed money monetization.”</p>
                         <div className="d-flex inner-content_div_text">
-                            <img src={potter} width="20%" className="align-self-center" /> 
+                            <img src={images[6]} width="20%" className="align-self-center" /> 
                             <div className="d-flex flex-column align-self-center ml-2">
                                 <p className="p-0 m-0 font-weight-bold">Harry Porter</p>
                                 <small style={{fontSize:'10px'}}>Team Leader @ Gryffindor</small>
@@ -227,10 +213,10 @@ const Main: React.FC = () => {
               title="Category"
               mutedTitle=" November 22, 2021"
               content="Pitch termsheet backing validation focus release."
-              image={walk}
+              image={images[0]} //walk
               withImage
               imageName="Chandler Bing"
-              image2={bing}
+              image2={images[10]} //bing
             />
           </div>
 
@@ -239,10 +225,10 @@ const Main: React.FC = () => {
               title="Category"
               mutedTitle=" November 22, 2021"
               content="Seed round direct mailing non-disclosure agreement graphical user interface rockstar.."
-              image={friendship}
+              image={images[1]} //friendship
               withImage
               imageName="Rachel Green"
-              image2={green}
+              image2={images[9]} //green
             />
           </div>
 
@@ -251,10 +237,10 @@ const Main: React.FC = () => {
               title="Category"
               mutedTitle=" November 22, 2021"
               content="Beta prototype sales iPad gen-z marketing network effects value proposition."
-              image={imagine}
+              image={images[2]} //imagine
               withImage
               imageName="Monica Geller"
-              image2={monica}
+              image2={images[8]} //monia
             />
           </div>
         </div>

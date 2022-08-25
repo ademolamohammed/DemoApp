@@ -26,10 +26,10 @@ const HeaderTab = () => {
                      non-disclosure.
                 </p>
                 <div className="mt-5">
-                    <button  onClick={() =>toast.success("Buy template clicked")} className="btn radius btn-outline-secondary text-dark mr-4 px-4 font-weight-bold template">
+                    <button  onClick={() =>toast.success("Buy template clicked")} className="btn mb-3 radius btn-outline-secondary text-dark mr-4 px-4 font-weight-bold template">
                         Buy template
                     </button>
-                    <button  onClick={() =>toast.success("Explore more clicked")}   className="btn border btn-outline-secondary radius text-white border-white px-5 font-weight-bold"> 
+                    <button  onClick={() =>toast.success("Explore more clicked")}   className="btn mb-3 border btn-outline-secondary radius text-white border-white px-5 font-weight-bold"> 
                         Explore
                     </button>
                 </div>
