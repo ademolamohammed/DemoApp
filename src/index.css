@@ -1,3 +1,10 @@
+:root {
+  --color-header: #0A2640;
+  --color-primary: #FFFF;
+  --color-login: #0A2640;
+  --color-template:#69E6A6;
+}
+
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif !important ;
@@ -6,5 +13,135 @@ body {
     sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden !important;
 }
+
+.header{
+  background-color: var(--color-header);
+}
+
+.nav-link {
+  color: var(--color-primary) !important;
+}
+
+.headerTab{
+  background-color: var(--color-header);
+}
+
+.template {
+  background-color: var(--color-template) !important;
+}
+
+.nav-link a {
+  color: var(--color-login) !important;
+}
+
+.firstHalf{
+  /* width:35% */
+  width:50% !important;
+  z-index: 99999;
+}
+
+.secondHalf{
+  width:50%;
+}
+
+.images{
+  width:70% !important;
+  height:70% !important;
+}
+
+.footer-first_text{
+  width: 75%;
+}
+
+  .main-text{
+    font-family: 'Manrope', sans-serif !important ;
+  }
+
+@media (max-width: 1043px) {
+  .firstHalf{
+    width: 45% !important;
+    /* margin-bottom: 2rem; */
+  }
+}
+
+@media (max-width: 991px) {
+  .firstHalf{
+    width: 100% !important;
+    margin-bottom: 4rem;
+  }
+
+  .images{
+    width:40% !important;
+    height:40% !important;
+    margin: auto !important;
+  }
+
+  .wrapper{
+    min-height: 105vh !important;
+  }
+
+  .card-section{
+    justify-content: center !important;
+    margin-bottom: 5rem;
+  }
+
+  .income-text{
+    text-align: center;
+  }
+  
+  .income-text_header{
+    width:100% !important;
+  }
+
+  .agile{
+    order:1;
+  }
+
+  .inner-content{
+    flex-direction: column !important;
+  }
+
+  .inner-content_div{
+    width: 50% !important;
+  }
+
+  .inner-content_div_text{
+    flex-direction: column !important;
+  }
+
+  
+}
+
+@media (max-width: 767px) {
+  .nav-link {
+    color: var(--color-login) !important;
+  }
+
+  .nav-text{
+    align-items: center;
+    justify-content: start !important;
+  }
+}
+
+@media (max-width: 720px) {
+
+  .wrapper{
+    min-height: 90vh !important;
+  }
+
+  .footer-first{
+    text-align: center;
+    order:1;
+  }
+
+  .footer-first_text{
+    width: 100%;
+  }
+
+}
+
+
+
 

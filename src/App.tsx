@@ -1,11 +1,15 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Layout from './components/layout';
+import Main from './pages';
 
 function App() {
   return (
-    <div className="d-flex vh-100 bg-dark">
-      <h6 className="text-primary m-auto"> React Demo App</h6>
+    <div className="">
+      <Layout>
+        <Main/>
+      </Layout>
     </div>
   );
 }
