@@ -1,6 +1,10 @@
 import React from "react";
 
 import { Container } from "react-bootstrap";
+import { toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
+// import "react-toastify/dist/ReactToastify.css";
+import "react-toastify/dist/ReactToastify.min.css";
 
 import hero from '../../assets/images/hero.svg'
 import logos from '../../assets/images/logos.svg'
@@ -8,6 +12,8 @@ import logos from '../../assets/images/logos.svg'
 const HeaderTab = () => {
   return (
     <Container fluid className="headerTab m-0 h-100 text-white">
+                  <ToastContainer style={{zIndex:999999}} limit={1} />
+
         <div className="d-flex row p-3">
             <div  className="col-lg-6 align-self-center firstHalf">
                 <h2 className="mb-2">
@@ -19,15 +25,14 @@ const HeaderTab = () => {
                      non-disclosure.
                 </p>
                 <div className="mt-5">
-                    <button className="btn radius text-dark mr-4 px-4 font-weight-bold template">
+                    <button  onClick={() =>toast.success("Buy template clicked")} className="btn radius btn-outline-secondary text-dark mr-4 px-4 font-weight-bold template">
                         Buy template
                     </button>
-                    <button   className="btn border radius text-white border-white px-5 font-weight-bold"> 
+                    <button  onClick={() =>toast.success("Explore more clicked")}   className="btn border btn-outline-secondary radius text-white border-white px-5 font-weight-bold"> 
                         Explore
                     </button>
                 </div>
             </div>
-            {/* align-self-start */}
             <div style={{zIndex:99999}} className="col-lg-6 align-self-center d-flex secondHalf ">
                 <img src={hero} className="images ml-auto"   alt=" frame image"/>
             </div>

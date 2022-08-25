@@ -26,6 +26,7 @@ import cooperate from "../assets/images/cooperate.svg"
 import Card from "../components/elements/card";
 import { Accordion } from "react-bootstrap";
 import EmailTemplate from "../components/elements/emailTemplate";
+import { toast } from "react-toastify";
 
 const Main: React.FC = () => {
   return (
@@ -91,7 +92,7 @@ const Main: React.FC = () => {
                 ></i>
                 <small>Business-to-consumer long tail. </small>
               </div>
-              <button className="btn border-dark w-25 py-2 bg-dark rounded text-white  font-weight-bold">
+              <button onClick={() =>toast.success("Start now clicked")}  style={{width:'25%'}} className="btn btn-outline-secondary border-dark py-2 bg-dark rounded text-white font-weight-bold start-now">
                 <small>Start Now</small>
               </button>
             </div>
@@ -259,7 +260,7 @@ const Main: React.FC = () => {
           </div>
         </div>
         <div className="text-center mt-3">
-            <button type="button" className="px-4 btn border-dark btn-outline-secondary font-weight-bold bg-white text-dark mb-3 radius">Learn More</button>
+            <button onClick={() =>toast.success("Learn more clicked")}  type="button" className="px-4 btn border-dark btn-outline-secondary font-weight-bold bg-white text-dark mb-3 radius">Learn More</button>
         </div>
         <div style={{padding:'1rem'}} className="adjustInput">
             <EmailTemplate />

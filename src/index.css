@@ -178,6 +178,11 @@ body {
   .form-Nav{
     flex-direction: column;
   }
+
+  .start-now{
+    width: 100% !important;
+  }
+
 }
 
 

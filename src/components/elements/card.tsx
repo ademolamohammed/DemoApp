@@ -1,4 +1,5 @@
 import Rect from 'react'
+import { toast } from 'react-toastify';
 
 
 interface ICard{
@@ -23,9 +24,11 @@ const Card = ({content,image,title,withImage,imageName,mutedTitle,image2}:ICard)
                         {withImage&&<small className='text-muted ml-3'>{mutedTitle}</small>}
                     </div>
                     <p className="card-text text-left card-item">{content}</p>
-                    {!withImage&&<div className='border-bottom w-50 py-2 card-item'>
-                        <span className='font-weight-bold mr-4'>Explore page</span>
-                        <i className="fa fa-arrow-right"></i>
+                    {!withImage&&<div style={{cursor:'pointer'}} onClick={() =>toast.success("Explore clicked")}  className='border-bottom w-50 py-2 card-item'>
+                        <span className='font-weight-bold mr-4'>Explore page</span> 
+                        <i className="fa fa-arrow-right"></i> 
+                        {/* <button className="btn">Explore page<i className="fa fa-arrow-right ml-2"></i></button> */}
+
                     </div>}
                     {
                         withImage &&

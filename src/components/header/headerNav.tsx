@@ -29,7 +29,6 @@ return(
                   Mobile view
                 </Offcanvas.Title>
               </Offcanvas.Header>
-              {/* d-flex not on line 33 ealier */}
               <Offcanvas.Body className='p-0 d-flex' style={{zIndex:9999}}>
                 <Nav style={{justifyContent:'end'}} className="flex-grow-1 pe-3 nav-text">
                   <Nav.Link href="#action1">Product</Nav.Link>
